@@ -72,9 +72,9 @@ export default function CallToAction() {
                 </p>
               </div>
               <div className='mt-12 mx-auto text-center'>
-                <button className='inline-flex items-center justify-center px-12 py-4 rounded-md shadow-sm text-lg font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'>
+                <a className='inline-flex items-center justify-center px-12 py-4 rounded-md shadow-sm text-lg font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'>
                   Download App
-                </button>
+                </a>
               </div>
             </div>
           </div>
