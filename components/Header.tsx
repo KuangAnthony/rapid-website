@@ -60,7 +60,7 @@ export default function Header() {
                 <button
                   type='button'
                   onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
-                  className='group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  className='group rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                 >
                   <span>Solutions</span>
                   {/* <!--
@@ -88,18 +88,12 @@ export default function Header() {
               >
                 Pricing
               </a>
-              <a
-                href='#'
-                className='text-base font-medium text-gray-500 hover:text-gray-900'
-              >
-                Docs
-              </a>
               <div className='relative'>
                 {/* <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" --> */}
                 <button
                   type='button'
                   onClick={() => setIsMoreOpen(!isMoreOpen)}
-                  className='group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                  className='group rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                 >
                   <span>More</span>
                   {/* <!--
@@ -127,13 +121,13 @@ export default function Header() {
                 href='#'
                 className='text-base font-medium text-gray-500 hover:text-gray-900'
               >
-                Sign in
+                Team
               </a>
               <a
                 href='#'
-                className='ml-8 inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700'
+                className='ml-8 inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-md font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'
               >
-                Sign up
+                Download App
               </a>
             </div>
           </div>
