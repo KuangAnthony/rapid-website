@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/Layout';
-import PhoneDemo from '../components/PhoneDemo';
 
 export default function Home() {
   return (
@@ -141,6 +140,7 @@ export default function Home() {
                   alt='Rapid App mockup'
                   layout='fill'
                   objectFit='contain'
+                  priority={true}
                 />
               </div>
             </div>
