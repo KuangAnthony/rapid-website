@@ -141,6 +141,7 @@ export default function Home() {
                   layout='fill'
                   objectFit='contain'
                   priority={true}
+                  quality={100}
                 />
               </div>
             </div>
