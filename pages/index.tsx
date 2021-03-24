@@ -102,9 +102,8 @@ export default function Home() {
           <div className='sm:mx-auto sm:max-w-3xl sm:px-6'>
             <div className='py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
               <div className='hidden sm:block'>
-                <div className='absolute inset-y-0 left-1/2 w-screen bg-gray-50 rounded-l-3xl lg:left-80 lg:right-0 lg:w-full'></div>
                 <svg
-                  className='absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0'
+                  className='absolute top-24 right-1/2 -mr-3 lg:left-20'
                   width='404'
                   height='392'
                   fill='none'
@@ -137,10 +136,11 @@ export default function Home() {
                 </svg>
               </div>
               <div className='relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12'>
-                <img
-                  className='w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none'
-                  src='https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg'
-                  alt=''
+                <Image
+                  src='/images/mockup.png'
+                  alt='Rapid App mockup'
+                  layout='fill'
+                  objectFit='contain'
                 />
               </div>
             </div>
