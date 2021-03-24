@@ -41,16 +41,16 @@ export default function Home() {
           <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24'>
             <div>
               <div>
-                <div className='h-20 w-14 relative'>
+                <div className='animated-peace-sign h-20 w-14 relative'>
                   <Image
-                    src='/images/peace-sign.svg'
+                    src='/images/peace-sign-emoji.svg'
                     alt='Peace Sign'
                     layout='fill'
                     objectFit='contain'
                   />
                 </div>
               </div>
-              <div className='mt-20'>
+              <div className='mt-12'>
                 <div>
                   <a href='#' className='inline-flex space-x-4'>
                     <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
@@ -66,9 +66,9 @@ export default function Home() {
                         aria-hidden='true'
                       >
                         <path
-                          fill-rule='evenodd'
+                          fillRule='evenodd'
                           d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                          clip-rule='evenodd'
+                          clipRule='evenodd'
                         />
                       </svg>
                     </span>
@@ -87,7 +87,7 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className='mt-6'>
+                <div className='mt-12'>
                   <a
                     href='#'
                     className='inline-flex items-center justify-center px-8 py-3 rounded-md shadow-sm text-md font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'
