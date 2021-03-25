@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className='sticky-nav'>
       <div className='z-20 shadow'>
-        <div className='max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8 md:justify-start md:space-x-10'>
+        <div className='max-w-7xl mx-auto flex justify-between items-center px-4 py-5 sm:px-6 sm:py-4 lg:px-8'>
           <div>
             <Link href='/'>
               <a className='flex'>
@@ -29,7 +29,7 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          <div className='-mr-2 -my-2 md:hidden'>
+          {/* <div className='-mr-2 -my-2 md:hidden'>
             <button
               type='button'
               onClick={() => setIsMobileMenuOpen(true)}
@@ -52,21 +52,15 @@ export default function Header() {
                 />
               </svg>
             </button>
-          </div>
-          <div className='hidden md:flex-1 md:flex md:items-center md:justify-between'>
-            <nav className='flex space-x-10'>
+          </div> */}
+          {/* <nav className='flex space-x-10'>
               <div className='relative'>
-                {/* <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" --> */}
                 <button
                   type='button'
                   onClick={() => setIsSolutionsOpen(!isSolutionsOpen)}
                   className='group rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                 >
                   <span>Solutions</span>
-                  {/* <!--
-
-                Item active: "text-gray-600", Item inactive: "text-gray-400"
-              --> */}
                   <svg
                     className='ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500'
                     xmlns='http://www.w3.org/2000/svg'
@@ -89,17 +83,12 @@ export default function Header() {
                 Pricing
               </a>
               <div className='relative'>
-                {/* <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" --> */}
                 <button
                   type='button'
                   onClick={() => setIsMoreOpen(!isMoreOpen)}
                   className='group rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                 >
                   <span>More</span>
-                  {/* <!--
-
-                Item active: "text-gray-600", Item inactive: "text-gray-400"
-              --> */}
                   <svg
                     className='ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500'
                     xmlns='http://www.w3.org/2000/svg'
@@ -115,21 +104,14 @@ export default function Header() {
                   </svg>
                 </button>
               </div>
-            </nav>
-            <div className='flex items-center md:ml-12'>
-              <a
-                href='#'
-                className='text-base font-medium text-gray-500 hover:text-gray-900'
-              >
-                Team
-              </a>
-              <a
-                href='#'
-                className='ml-8 inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'
-              >
-                Download App
-              </a>
-            </div>
+            </nav> */}
+          <div className='inline-flex items-center md:ml-12 justify-self-end'>
+            <a
+              href='#'
+              className='ml-8 inline-flex items-center justify-center px-4 py-2 rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-tr from-[#629cf7] to-[#19d9b2] hover:opacity-80'
+            >
+              Download App
+            </a>
           </div>
         </div>
       </div>
@@ -715,7 +697,7 @@ export default function Header() {
         )}
       </Transition>
 
-      <Transition
+      {/* <Transition
         show={isMobileMenuOpen}
         enter='duration-50 ease-out'
         enterFrom='opacity-0 scale-95'
@@ -951,7 +933,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </Transition>
+      </Transition> */}
     </header>
   );
 }
