@@ -45,7 +45,7 @@ export default function AmbassadorProgram() {
 
   return (
     <Layout>
-      <main className='max-w-4xl mx-auto py-20 px-8'>
+      <main className='max-w-4xl mx-auto py-24 px-8'>
         <form
           className='space-y-8 divide-y divide-gray-200'
           onSubmit={handleSubmit}
@@ -53,16 +53,16 @@ export default function AmbassadorProgram() {
           <div className='space-y-8 divide-y divide-gray-200'>
             <div>
               <div>
-                <h3 className='text-xl leading-6 font-medium text-gray-900 mb-3'>
+                <h3 className='text-2xl leading-6 font-medium text-gray-900 mb-5'>
                   Ambassador Program Form
                 </h3>
-                <p className='mt-1 text-sm text-gray-500'>
+                <p className='text-sm text-gray-500'>
                   This program is designed for remarkable individuals who
                   provide aunique experience that exemplifies ingenuity of the
                   wider community of Rapid.
                 </p>
-                <ul className='text-gray-700 font-medium text-base pl-6 py-8'>
-                  <li className='flex items-center gap-3 mb-2'>
+                <ul className='text-gray-700 font-medium text-base pl-6 py-10'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -83,7 +83,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Official partner of Rapid</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -104,7 +104,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Distinguished partner badge on app</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -125,7 +125,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Future merch packages</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -146,7 +146,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Early access to new features</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -167,7 +167,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Partner-only in-app perks</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -188,7 +188,7 @@ export default function AmbassadorProgram() {
                     </div>
                     <p>Priority contact with Rapid support</p>
                   </li>
-                  <li className='flex items-center gap-3 mb-2'>
+                  <li className='flex items-center gap-3 mb-3'>
                     <div className='h-5 w-5 text-green-600'>
                       <svg
                         viewBox='0 0 24 24'
@@ -227,7 +227,7 @@ export default function AmbassadorProgram() {
                       type='text'
                       name='first_name'
                       id='first_name'
-                      className='flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300'
+                      className='flex-1 focus:ring focus:ring-cyan-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border py-0.5 px-1 outline-none'
                     />
                   </div>
                 </div>
@@ -245,7 +245,7 @@ export default function AmbassadorProgram() {
                       required={true}
                       id='social_platform'
                       name='social_platform'
-                      className='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
+                      className='flex-1 focus:ring focus:ring-cyan-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border py-0.5 px-1 outline-none'
                     >
                       <option>TikTok</option>
                       <option>Instagram</option>
@@ -268,7 +268,7 @@ export default function AmbassadorProgram() {
                       type='text'
                       name='social_handle_username'
                       id='social_handle_username'
-                      className='flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300'
+                      className='flex-1 focus:ring focus:ring-cyan-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border py-0.5 px-1 outline-none'
                     />
                   </div>
                 </div>
@@ -280,7 +280,7 @@ export default function AmbassadorProgram() {
                   >
                     Email address
                   </label>
-                  <div className='mt-1'>
+                  <div className='mt-1 shadow-sm'>
                     <input
                       ref={emailAddress}
                       required={true}
@@ -288,7 +288,7 @@ export default function AmbassadorProgram() {
                       name='email_address'
                       type='email'
                       autoComplete='email'
-                      className='shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md'
+                      className='flex-1 focus:ring focus:ring-cyan-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border py-0.5 px-1 outline-none'
                     />
                   </div>
                 </div>
@@ -299,7 +299,7 @@ export default function AmbassadorProgram() {
                     className='flex gap-4 items-center text-sm font-medium text-gray-700'
                   >
                     <span>Reference ID</span>
-                    <span className='rounded bg-yellow-100 px-2.5 py-1 text-xs font-semibold text-yellow-500 tracking-wide uppercase'>
+                    <span className='rounded bg-yellow-100 px-1.5 py-1 text-xs font-semibold text-yellow-500 tracking-wide uppercase'>
                       Optional
                     </span>
                   </label>
@@ -309,7 +309,7 @@ export default function AmbassadorProgram() {
                       type='text'
                       name='reference_id'
                       id='reference_id'
-                      className='flex-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300'
+                      className='flex-1 focus:ring focus:ring-cyan-500 block w-full min-w-0 rounded-md sm:text-sm border-gray-300 border py-0.5 px-1 outline-none'
                     />
                   </div>
                 </div>
