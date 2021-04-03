@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -118,23 +119,22 @@ export default function Footer() {
                             <li>
                               <a
                                 href='#'
-                                className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'
+                                className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
                               >
                                 Jobs
                               </a>
                             </li>
                             <li>
-                              <a
-                                href='#'
-                                className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'
-                              >
-                                Ambassador Program
-                              </a>
+                              <Link href='/ambassador-program'>
+                                <a className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'>
+                                  Ambassador Program
+                                </a>
+                              </Link>
                             </li>
                             <li>
                               <a
                                 href='#'
-                                className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'
+                                className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
                               >
                                 Privacy
                               </a>
@@ -142,7 +142,7 @@ export default function Footer() {
                             <li>
                               <a
                                 href='#'
-                                className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'
+                                className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
                               >
                                 Terms
                               </a>
@@ -157,9 +157,12 @@ export default function Footer() {
             </div>
             <div className='justify-between hidden md:flex'>
               <div>
-                <h3 className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'>
+                <a
+                  href='#'
+                  className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
+                >
                   Jobs
-                </h3>
+                </a>
                 {/* <ul className='mt-4 space-y-4'>
                   <li>
                     <a
@@ -199,9 +202,11 @@ export default function Footer() {
                 </ul> */}
               </div>
               <div className='mt-12 md:mt-0'>
-                <h3 className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'>
-                  Ambassador Program
-                </h3>
+                <Link href='/ambassador-program'>
+                  <a className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'>
+                    Ambassador Program
+                  </a>
+                </Link>
                 {/* <ul className='mt-4 space-y-4'>
                   <li>
                     <a
@@ -241,9 +246,12 @@ export default function Footer() {
                 </ul> */}
               </div>
               <div>
-                <h3 className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'>
+                <a
+                  href='#'
+                  className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
+                >
                   Privacy
-                </h3>
+                </a>
                 {/* <ul className='mt-4 space-y-4'>
                   <li>
                     <a
@@ -292,9 +300,12 @@ export default function Footer() {
                 </ul> */}
               </div>
               <div className='mt-12 md:mt-0'>
-                <h3 className='text-sm font-semibold text-gray-500 hover:text-gray-900 tracking-wider uppercase'>
+                <a
+                  href='#'
+                  className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
+                >
                   Terms
-                </h3>
+                </a>
                 {/* <ul className='mt-4 space-y-4'>
                   <li>
                     <a

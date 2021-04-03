@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 export default function Home() {
@@ -36,7 +37,7 @@ export default function Home() {
       </Head>
 
       <div className='bg-white pb-8 sm:pb-12 lg:pb-12'>
-        <div className='pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-48'>
+        <div className='py-16 overflow-hidden relative lg:py-48'>
           <div className='mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24'>
             <div>
               <div>
@@ -51,27 +52,29 @@ export default function Home() {
               </div>
               <div className='mt-12'>
                 <div>
-                  <a href='#' className='inline-flex space-x-4'>
-                    <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
-                      Rapid App
-                    </span>
-                    <span className='inline-flex items-center text-sm font-medium text-cyan-600 space-x-1'>
-                      <span>Meet the team</span>
-                      <svg
-                        className='h-5 w-5'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'
-                        fill='currentColor'
-                        aria-hidden='true'
-                      >
-                        <path
-                          fillRule='evenodd'
-                          d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
-                          clipRule='evenodd'
-                        />
-                      </svg>
-                    </span>
-                  </a>
+                  <Link href='/ambassador-program'>
+                    <a className='inline-flex space-x-4'>
+                      <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
+                        Rapid App
+                      </span>
+                      <span className='inline-flex items-center text-sm font-medium text-cyan-600 space-x-1'>
+                        <span>Ambassador Program</span>
+                        <svg
+                          className='h-5 w-5'
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 20 20'
+                          fill='currentColor'
+                          aria-hidden='true'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                      </span>
+                    </a>
+                  </Link>
                 </div>
                 <div className='mt-6 sm:max-w-xl'>
                   <h1 className='text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl'>
@@ -98,9 +101,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='sm:mx-auto sm:max-w-3xl sm:px-6'>
-            <div className='py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
-              <div className='hidden sm:block'>
+          <div>
+            <div className='py-12 sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
+              <div className='hidden lg:block'>
                 <svg
                   className='absolute top-24 right-1/2 -mr-3 lg:left-20'
                   width='404'
@@ -144,10 +147,84 @@ export default function Home() {
                   quality={100}
                 />
               </div>
+              <div className='lg:hidden mx-auto max-w-3xl transform scale-150 py-36 sm:py-28 md:py-40'>
+                <Image
+                  src='/images/mockup.png'
+                  alt='Rapid App mockup'
+                  width={800}
+                  height={728}
+                  objectFit='contain'
+                  priority={true}
+                  quality={100}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <main className='max-w-6xl mx-auto px-8 lg:mt-12 mb-36'>
+        <div className='flex flex-col lg:flex-row lg:justify-around items-center'>
+          <div className='order-2 lg:order-1 relative max-w-3xl shadow-2xl rounded-2xl mt-10 lg:mt-0'>
+            <Image
+              src='/images/chat.png'
+              alt='Chat about whatever'
+              height={800}
+              width={340}
+              objectFit='contain'
+              quality={100}
+            />
+          </div>
+          <div className='order-1 lg:order-2 lg:ml-12 self-start lg:self-center'>
+            <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
+              Random Chat
+            </span>
+            <h2 className='text-2xl font-semibold text-gray-900 tracking-tight sm:text-3xl mt-3'>
+              Chat about whatever you want.
+            </h2>
+          </div>
+        </div>
+        <div className='flex flex-col lg:flex-row lg:justify-around items-center mt-28'>
+          <div className='lg:mr-12 self-start lg:self-center'>
+            <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
+              Having Fun?
+            </span>
+            <h2 className='text-2xl font-semibold text-gray-900 tracking-tight sm:text-3xl mt-3'>
+              Become Friends to continue the conversation!
+            </h2>
+          </div>
+          <div className='relative max-w-3xl shadow-2xl rounded-2xl mt-10 lg:mt-0'>
+            <Image
+              src='/images/friends.png'
+              alt='Become friends'
+              height={736}
+              width={340}
+              objectFit='contain'
+              quality={100}
+            />
+          </div>
+        </div>
+        <div className='flex flex-col lg:flex-row lg:justify-around items-center mt-28'>
+          <div className='order-2 lg:order-1 max-w-3xl rounded-3xl mt-10 lg:mt-0'>
+            <Image
+              src='/images/skip.png'
+              alt='Skip a person'
+              height={736}
+              width={340}
+              objectFit='contain'
+              quality={100}
+            />
+          </div>
+          <div className='order-1 lg:order-2 lg:ml-12 self-start lg:self-center'>
+            <span className='rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase'>
+              Skip Effortlessly
+            </span>
+            <h2 className='text-2xl font-semibold text-gray-900 tracking-tight sm:text-3xl mt-3'>
+              Not feeling the vibe? Skip to the next.
+            </h2>
+          </div>
+        </div>
+      </main>
     </Layout>
   );
 }
