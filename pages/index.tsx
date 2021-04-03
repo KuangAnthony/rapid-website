@@ -139,7 +139,7 @@ export default function Home() {
               </div>
               <div className='relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12'>
                 <Image
-                  src='/images/mockup.png'
+                  src='/images/mockup.svg'
                   alt='Rapid App mockup'
                   layout='fill'
                   objectFit='contain'
@@ -149,7 +149,7 @@ export default function Home() {
               </div>
               <div className='lg:hidden mx-auto max-w-3xl transform scale-150 py-36 sm:py-28 md:py-40'>
                 <Image
-                  src='/images/mockup.png'
+                  src='/images/mockup.svg'
                   alt='Rapid App mockup'
                   width={800}
                   height={728}
@@ -165,14 +165,13 @@ export default function Home() {
 
       <main className='max-w-6xl mx-auto px-8 lg:mt-12 mb-36'>
         <div className='flex flex-col lg:flex-row lg:justify-around items-center'>
-          <div className='order-2 lg:order-1 relative max-w-3xl shadow-2xl rounded-2xl mt-10 lg:mt-0'>
+          <div className='order-2 lg:order-1 relative max-w-3xl rounded-2xl mt-10 lg:mt-0'>
             <Image
-              src='/images/chat.png'
+              src='/images/chat.svg'
               alt='Chat about whatever'
-              height={800}
-              width={340}
+              height={840}
+              width={388}
               objectFit='contain'
-              quality={100}
             />
           </div>
           <div className='order-1 lg:order-2 lg:ml-12 self-start lg:self-center'>
@@ -193,24 +192,23 @@ export default function Home() {
               Become Friends to continue the conversation!
             </h2>
           </div>
-          <div className='relative max-w-3xl shadow-2xl rounded-2xl mt-10 lg:mt-0'>
+          <div className='relative max-w-3xl rounded-2xl mt-10 lg:mt-0'>
             <Image
-              src='/images/friends.png'
+              src='/images/friends.svg'
               alt='Become friends'
-              height={736}
-              width={340}
+              height={840}
+              width={388}
               objectFit='contain'
-              quality={100}
             />
           </div>
         </div>
         <div className='flex flex-col lg:flex-row lg:justify-around items-center mt-28'>
           <div className='order-2 lg:order-1 max-w-3xl rounded-3xl mt-10 lg:mt-0'>
             <Image
-              src='/images/skip.png'
+              src='/images/skip.svg'
               alt='Skip a person'
-              height={736}
-              width={340}
+              height={840}
+              width={388}
               objectFit='contain'
               quality={100}
             />
