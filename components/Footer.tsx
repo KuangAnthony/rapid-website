@@ -348,7 +348,7 @@ export default function Footer() {
             />
           </div>
           <p className='text-base text-gray-400 lg:text-center flex-1'>
-            &copy; 2021 Rapid, Inc.
+            &copy; Rapid Software Technologies, Inc.
           </p>
           <div className='flex space-x-6 ml-auto lg:hidden'>
             <a href='#' className='text-gray-400 hover:text-gray-500'>
@@ -399,6 +399,19 @@ export default function Footer() {
               </svg>
             </a>
           </div>
+        </div>
+      </div>
+      <div className='bg-cyan-100'>
+        <div className='max-w-3xl lg:max-w-7xl mx-auto text-xs md:text-sm px-6 py-1.5 lg:px-16 flex justify-between items-center'>
+          <a
+            href='mailto:info@rapidapp.gg'
+            className='font-medium text-cyan-600'
+          >
+            info@rapidapp.gg
+          </a>
+          <p className='text-cyan-600 ml-12'>
+            1055 West Hastings Street, Vancouver BC, V6E 2E9
+          </p>
         </div>
       </div>
     </footer>
