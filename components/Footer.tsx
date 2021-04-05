@@ -407,7 +407,7 @@ export default function Footer() {
             href='mailto:info@rapidapp.gg'
             className='font-medium text-cyan-600'
           >
-            info@rapidapp.gg
+            info@rapidapp.live
           </a>
           <p className='text-cyan-600 ml-12'>
             1055 West Hastings Street, Vancouver BC, V6E 2E9
