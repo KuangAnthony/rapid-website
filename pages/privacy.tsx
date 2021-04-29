@@ -3,7 +3,7 @@ import Head from 'next/head';
 import emailjs from 'emailjs-com';
 import Layout from '../components/Layout';
 
-export default function AmbassadorProgram() {
+export default function privacy() {
   
   
 
@@ -47,7 +47,7 @@ export default function AmbassadorProgram() {
           onSubmit={handleSubmit}
         >
           <div className='space-y-8 divide-y divide-gray-200'>
-            <div>
+            
               <div>
                 <h3 className='text-2xl leading-6 font-medium text-gray-900 mb-5'>
                   Rapid App Privacy Policy
@@ -137,32 +137,7 @@ Please also feel free to contact us if you have any questions about this Privacy
 </p>
             </div>
 
-              <div className='mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6'>
-                <div className='sm:col-span-4'>
-                
-                  <div className='mt-1 flex rounded-md shadow-sm'>
-                    
-                  </div>
-                </div>
-
-                <div className='sm:col-span-3'>
-                 
-                </div>
-
-                <div className='sm:col-span-4'>
-                  
-                </div>
-
-                <div className='sm:col-span-4'>
-                  
-                </div>
-
-                <div className='sm:col-span-4'>
-                 
-                  
-                </div>
-              </div>
-            </div>
+              
           </div>
 
           <div className='pt-5'>
@@ -176,6 +151,7 @@ Please also feel free to contact us if you have any questions about this Privacy
             </div>
           </div>
         </form>
+        
       </main>
     </Layout>
   );
