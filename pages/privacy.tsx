@@ -5,9 +5,7 @@ import Layout from '../components/Layout';
 
 export default function privacy() {
   
-  
 
-    
 
   return (
     <Layout>
@@ -42,10 +40,7 @@ export default function privacy() {
       </Head>
 
       <main className='max-w-4xl mx-auto py-24 px-8'>
-        <form
-          className='space-y-8 divide-y divide-gray-200'
-          onSubmit={handleSubmit}
-        >
+       
           <div className='space-y-8 divide-y divide-gray-200'>
             
               <div>
@@ -150,7 +145,7 @@ Please also feel free to contact us if you have any questions about this Privacy
               </button>
             </div>
           </div>
-        </form>
+        
         
       </main>
     </Layout>
