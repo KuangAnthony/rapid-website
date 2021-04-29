@@ -132,12 +132,14 @@ export default function Footer() {
                               </Link>
                             </li>
                             <li>
+                            <Link href='/privacy'>
                               <a
                                 href='#'
                                 className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
                               >
                                 Privacy
                               </a>
+                              </Link>
                             </li>
                             <li>
                               <a
