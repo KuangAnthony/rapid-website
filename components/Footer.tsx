@@ -134,7 +134,7 @@ export default function Footer() {
                             <li>
                             <Link href='/privacy'>
                               <a
-                                href='#'
+                                
                                 className='text-sm font-semibold text-gray-400 hover:text-gray-500 tracking-wider uppercase'
                               >
                                 Privacy
