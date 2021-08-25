@@ -29,7 +29,7 @@ export default function Header() {
               </a>
             </Link>
           </div>
-          {/* <div className='-mr-2 -my-2 md:hidden'>
+          <div className='-mr-2 -my-2 md:hidden'>
             <button
               type='button'
               onClick={() => setIsMobileMenuOpen(true)}
@@ -52,8 +52,8 @@ export default function Header() {
                 />
               </svg>
             </button>
-          </div> */}
-          {/* <nav className='flex space-x-10'>
+          </div>
+          <nav className='flex space-x-10'>
               <div className='relative'>
                 <button
                   type='button'
@@ -104,7 +104,7 @@ export default function Header() {
                   </svg>
                 </button>
               </div>
-            </nav> */}
+            </nav>
           <div className='inline-flex items-center md:ml-12 justify-self-end'>
             <a
               href='#'
@@ -697,7 +697,7 @@ export default function Header() {
         )}
       </Transition>
 
-      {/* <Transition
+      <Transition
         show={isMobileMenuOpen}
         enter='duration-50 ease-out'
         enterFrom='opacity-0 scale-95'
@@ -933,7 +933,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </Transition> */}
+      </Transition>
     </header>
   );
 }
